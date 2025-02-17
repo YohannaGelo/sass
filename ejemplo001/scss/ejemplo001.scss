@@ -1,0 +1,33 @@
+// Estos comentarios no aparecen en el css resultante
+
+// Variables Sass
+$color1: #aa478b;
+$color2: #2758ca;
+$color3: #f5efd9;
+
+$font1: sans-serif;
+$font2: Verdana;
+
+body {
+    font-family: $font1;
+
+}
+
+h1 {
+    color: $color1;
+    font-family: $font2;
+}
+
+p {
+    color: $color2;
+}
+
+/* Ejemplo de anidación (este comentario si aparece */
+main {
+    div {
+        p {
+            background-color: $color3;
+        }
+    }
+}
+

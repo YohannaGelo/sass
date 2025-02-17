@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #aa478b;
+  font-family: Verdana;
+}
+
+p {
+  color: #2758ca;
+}
+
+/* Ejemplo de anidación (este comentario si aparece */
+main div p {
+  background-color: #f5efd9;
+}
+
+/*# sourceMappingURL=ejemplo001.css.map */
