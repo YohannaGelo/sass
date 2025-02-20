@@ -1,20 +1,21 @@
 @use 'sass:math';
 
-$tamaño: 100%;
-$número-de-partes: 10;
+$size: 100%;
+$num-parts: 10;
 $color1: limegreen;
 $color2: tomato;
 
 // Deben devolver valor obligatoriamente
-@function partir($tamaño, $número-de-partes) {
-    @return math.div($tamaño , $número-de-partes);
-}
+@function partir($size, $num-parts) {
+    @return math.div($size , $num-parts) 
+};
+
 
 div{
     background-color: $color1;
 }
 
-.décimo {
+.decimo {
     background-color: $color2;
-    width: partir($tamaño, $número-de-partes);
+    width: partir($size, $num-parts);
 }

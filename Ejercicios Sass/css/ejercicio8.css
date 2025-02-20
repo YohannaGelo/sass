@@ -1,50 +1,50 @@
 .color1 {
-  background-color: #000000;
-  color: white;
-}
-
-.color2 {
   background-color: #100000;
   color: white;
 }
 
-.color3 {
+.color2 {
   background-color: #200000;
   color: white;
 }
 
-.color4 {
+.color3 {
   background-color: #300000;
   color: white;
 }
 
-.color5 {
+.color4 {
   background-color: #400000;
   color: white;
 }
 
-.color6 {
+.color5 {
   background-color: #500000;
   color: white;
 }
 
-.color7 {
+.color6 {
   background-color: #600000;
   color: white;
 }
 
-.color8 {
+.color7 {
   background-color: #700000;
   color: white;
 }
 
-.color9 {
+.color8 {
   background-color: #800000;
   color: white;
 }
 
-.color10 {
+.color9 {
   background-color: #900000;
+  color: white;
+}
+
+.color10 {
+  background-color: #1000000;
   color: white;
 }
 

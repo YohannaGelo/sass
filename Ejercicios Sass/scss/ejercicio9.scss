@@ -26,3 +26,9 @@
     font-size: 1.2em;
     font-weight: bold;
 }
+
+.header, .footer {
+    @include crear-grid(6, 1);
+    background-color: rgb(238, 146, 106);
+
+}

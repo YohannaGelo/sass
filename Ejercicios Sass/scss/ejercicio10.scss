@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+$counter: 5;
+$div: 2;
+
+@while $counter > 0 {
+
+    .ancho-col-#{$counter} {
+        width: #{math.div(100, $div)}#{'%'}; 
+        background-color: burlywood;
+        margin: 2rem;
+    }
+
+    $counter: $counter - 1;
+    $div: $div + 2;
+} 
+
+

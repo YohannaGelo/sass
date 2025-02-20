@@ -1,0 +1,13 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Por defecto - 1 rem = 16px -> 62.5% 1 rem = 10px. Así las medidas en rem son más fáciles de calcular, solo multiplicando por 10 */
+    scroll-behavior: smooth;    /* Crea un desplazamiento suave */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,31 @@
+.ancho-col-5 {
+  width: 50%;
+  background-color: burlywood;
+  margin: 2rem;
+}
+
+.ancho-col-4 {
+  width: 25%;
+  background-color: burlywood;
+  margin: 2rem;
+}
+
+.ancho-col-3 {
+  width: 16.6666666667%;
+  background-color: burlywood;
+  margin: 2rem;
+}
+
+.ancho-col-2 {
+  width: 12.5%;
+  background-color: burlywood;
+  margin: 2rem;
+}
+
+.ancho-col-1 {
+  width: 10%;
+  background-color: burlywood;
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=ejercicio10.css.map */

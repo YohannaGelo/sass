@@ -1,0 +1,14 @@
+@use 'ej11-reset' as reset;
+@use 'ej11-general' as gen;
+@use 'ej11-colores' as color;
+
+body {
+    font-family: gen.$bodyfont;
+    background-color: color.$bodycolor;
+    font-size: gen.$bodysize;
+}
+
+footer {
+    background-color: color.$footercolor;
+    clear: both;
+}
