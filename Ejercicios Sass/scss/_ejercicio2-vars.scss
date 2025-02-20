@@ -1,0 +1,9 @@
+//Este archivo es un partial: será incluido en otro
+//No se compila
+//Empieza por _
+
+// Si no añadimos default no podremos asignar otros valores, dará un error
+$body-color: #fe0fea!default;
+$h1-color: #666666!default;
+$body-font-size: 2rem!default;
+$h1-size: 3.2rem!default;

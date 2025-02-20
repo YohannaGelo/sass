@@ -1,0 +1,33 @@
+@use 'sass:math'; // carga este módulo y permite usar sus funciones
+
+//Variables
+$anchura: 1200px;
+$color1: burlywood;
+$color2: lime;
+$color3: aqua;
+
+.mitad {
+    background-color: $color1;
+    //width: $anchura/2;
+    //width: calc($anchura / 2);
+    width: math.div($anchura, 2);
+}
+
+.cuarto {
+    background-color: $color2;
+    //width: $anchura/2;
+    //width: calc($anchura / 2);
+    width: math.div($anchura, 4);
+}
+
+.octavo {
+    background-color: $color3;
+    //width: $anchura/2;
+    //width: calc($anchura / 2);
+    width: math.div($anchura, 8);
+}
+
+// un comando de depuración que imprimiría el resultado en cosola
+@debug math.pow(2, 10);
+// un comando de depuración que imprimiría el resultado en la terminal del ide
+@warn math.pow(2, 10);

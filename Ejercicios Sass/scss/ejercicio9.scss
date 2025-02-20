@@ -1,0 +1,28 @@
+// Podemos definir código reutilizable que permite el uso de parámetros
+// Si queremos un valor por defecto podemos definirlo en el parámetro. 
+@mixin crear-grid($filas, $columnas, $gap: 20px) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    grid-template-rows: repeat($filas, 1fr);
+    gap: $gap;
+}
+
+// Al llamarlo podemos personalizar el número de filas y columnas por ejemplo
+.container {
+    @include crear-grid(3, 4, 15px);
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.item {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkblue;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}

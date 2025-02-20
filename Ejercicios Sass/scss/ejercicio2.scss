@@ -1,0 +1,22 @@
+// 1) @use 'ejercicio2-vars';
+// 2) Alias:
+// @use 'ejercicio2-vars' as v;
+// 3) Con valores por defecto:
+@use 'ejercicio2-vars' as v with (
+    $body-color: limegreen,
+    $h1-color: aqua
+);
+// "v" es el nombre de la variable que le hemos proporcionado para no tener que escribir todo el tiempo "ejercicio2-vars"
+
+/* Esto es un comentario que sí aparece en la compilación */
+body {
+    // background-color: ejercicio2-vars.$body-color;
+    // font-size: ejercicio2-vars.$body-font-size;
+    background-color: v.$body-color;
+    font-size: v.$body-font-size;
+}
+
+h1 {
+    color: v.$h1-color;
+    font-size: v.$h1-size;
+}

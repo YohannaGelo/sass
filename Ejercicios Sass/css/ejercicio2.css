@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* Esto es un comentario que sí aparece en la compilación */
+body {
+  background-color: limegreen;
+  font-size: 2rem;
+}
+
+h1 {
+  color: aqua;
+  font-size: 3.2rem;
+}
+
+/*# sourceMappingURL=ejercicio2.css.map */

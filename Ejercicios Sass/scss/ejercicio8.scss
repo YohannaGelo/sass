@@ -1,0 +1,17 @@
+$color-base: '#';
+
+// Podemos usar bucles y crear colores aleatorios
+@for $i from 1 through 10 {
+
+    // O usar condicionales
+    @if ($i - 1) == 0 {
+        $color-base: #{$color-base}#{0};
+    } @else {
+        $color-base: '#';
+    }
+    .color#{$i} {
+        // Para concatenar usamos #{}#{}
+        background-color: #{$color-base}#{($i - 1) * 10}0000;
+        color: white;
+    }
+}

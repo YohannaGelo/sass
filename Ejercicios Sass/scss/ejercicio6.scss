@@ -1,0 +1,20 @@
+$ancho: 1200px;
+$alto: 600px;
+$color1: limegreen;
+$color2: tomato;
+
+// esta clase tiene estas características
+.contenedor {
+    background-color: $color1;
+    width: $ancho;
+}
+
+// Ejemplo de extensión de clases con @extend
+.contenedor-con-altura {
+    // esta clase adopta las clases de contenedor...
+    @extend .contenedor;
+
+    // ...y las suyas propias, que pueden sobreescribir alguna
+    background-color: $color2;
+    height: $alto;
+}

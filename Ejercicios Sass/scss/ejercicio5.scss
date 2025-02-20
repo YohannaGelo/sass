@@ -1,0 +1,41 @@
+$color1: limegreen;
+$color2: tomato;
+$color3: lightgray;
+$color4: navy;
+$color-links: olive;
+
+// Esta es la manera de crear estilo a los diferentes elementos a través de anidaciones
+header {
+    h1 {
+        color: $color1;
+    }
+}
+
+main {
+    h2 {
+        color: $color2;
+
+        // Podemos establecer la media query más fácil
+        @media (min-width: 576px) {
+            font-size: 2rem;
+        }
+    }
+}
+
+footer {
+    background-color: $color3;
+
+    h4 {
+        color: $color4;
+    }
+
+    a {
+        color: $color-links;
+
+        // en lugar de poner a:hover ponemos...
+        &:hover {
+          text-decoration: none;
+            }
+      }
+}
+

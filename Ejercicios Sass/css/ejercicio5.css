@@ -1,0 +1,27 @@
+header h1 {
+  color: limegreen;
+}
+
+main h2 {
+  color: tomato;
+}
+@media (min-width: 576px) {
+  main h2 {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  background-color: lightgray;
+}
+footer h4 {
+  color: navy;
+}
+footer a {
+  color: olive;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=ejercicio5.css.map */
