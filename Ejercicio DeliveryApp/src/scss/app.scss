@@ -1,8 +1,9 @@
 // Este archivo solo contiene importaciones de todas las carpetas scss
-// EN cada carpeta debe haber un -index.html, que es el que buscará este
+// En cada carpeta debe haber un _index.html, que es el que buscará este
 @use 'base';
-// @use 'header';
-// @use 'form';
+@use 'header';
+@use 'form';
+@use 'steps';
 
 
 

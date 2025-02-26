@@ -1,0 +1,68 @@
+@use 'vars' as var;
+@use 'sass:color';
+
+// Código reutilizable a los que se le puede pasar parámetros
+
+// Box-sizing
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model;
+}
+
+// Crear grid
+@mixin do-grid($num-columns, $gap: 10px) {
+    display: grid;
+    grid-template-columns: repeat($num-columns, 1fr);
+    gap: $gap;
+}
+
+// Botón
+@mixin btn($bgcolor, $fgcolor) {
+    background-color: $bgcolor;
+    border: 0;
+    border-radius: 1rem;
+    color: $fgcolor;
+    display: block;
+    font-weight: 700;
+    padding: 1.2rem 3rem;
+    text-align: center;
+    width: 100%;
+
+    @include tablet {
+        width: auto;
+    }
+
+    // Transición
+    transition: background-color 0.3s;
+
+    &:hover {
+        // Negativo = oscurecer / positivo = iluminar
+        background-color: color.adjust($bgcolor, $lightness: -20%);
+    }
+
+}
+
+// Media-queries
+@mixin mobile {
+    @media screen and (min-width: var.$small) {
+        // Como no puede ir vacía ponemos aquí que hay un contenido
+        @content;
+        
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: var.$medium) {
+        // Como no puede ir vacía ponemos aquí que hay un contenido
+        @content;
+        
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: var.$big) {
+        // Como no puede ir vacía ponemos aquí que hay un contenido
+        @content;
+        
+    }
+}
+
