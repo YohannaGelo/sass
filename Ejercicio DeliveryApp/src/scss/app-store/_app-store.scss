@@ -1,0 +1,70 @@
+@use '../base/vars' as var;
+@use '../base/mixins' as mix;
+
+
+.apps {
+    background-color: var.$grey;
+    padding: var.$spacing 0;
+
+    &__grid {
+
+        @include mix.do-grid(4, 2rem);
+
+
+        @include mix.tablet {
+            @include mix.do-grid(2, 2rem);
+            align-items: center;
+        }
+
+    }
+
+    &__image {
+        grid-row: 2/3;
+        grid-column: 2/4;
+
+        @include mix.tablet {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        @include mix.tablet {
+            width: 40%;
+
+        }
+    }
+}
+
+.app-stores {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+
+
+    @include mix.tablet {
+        grid-column: 2/-1;
+    }
+
+    @include mix.desktop {
+        width: 80%;
+    }
+
+    &__heading {
+        text-align: center;
+        color: var.$secundary-color;
+        margin-bottom: 0;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__grid {
+
+        @include mix.do-grid(2, 2rem);
+
+
+    }
+
+}

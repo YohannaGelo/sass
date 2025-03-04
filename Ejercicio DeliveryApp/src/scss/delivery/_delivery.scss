@@ -1,0 +1,30 @@
+@use '../base/vars' as var;
+@use '../base/mixins' as mix;
+
+
+.delivery {
+    margin: var.$spacing 0;
+
+    &__heading {
+        padding: 0 var.$spacing;
+        color: var.$secundary-color;
+        text-align: center;
+    }
+
+    &__link {
+
+        @include mix.btn (var.$main-color, var.$white);
+    }
+
+    &__text {
+        line-height: 1.5;
+    }
+
+    &__grid {
+
+        @include mix.tablet {
+            @include mix.do-grid(2, 2rem);
+        }
+
+    }
+}
