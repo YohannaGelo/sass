@@ -1,13 +1,13 @@
 // Este archivo solo contiene importaciones de todas las carpetas scss
 // En cada carpeta debe haber un _index.html, que es el que buscará este
-@use 'base';
-@use 'header';
-@use 'form';
-@use 'steps';
-@use 'opinions';
-@use 'favorite';
-@use 'delivery';
-@use 'app-store';
+@use 'ui/base';
+@use 'ui/header';
+@use 'ui/form';
+@use 'ui/steps';
+@use 'ui/opinions';
+@use 'ui/favorite';
+@use 'ui/delivery';
+@use 'ui/app-store';
 
 
 

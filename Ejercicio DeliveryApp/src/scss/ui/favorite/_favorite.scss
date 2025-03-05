@@ -1,0 +1,112 @@
+@use '../base/vars' as var;
+@use '../base/mixins' as mix;
+@use 'sass:color';
+
+
+.favorites {
+    margin-top: var.$spacing;
+    background-color: var.$grey;
+    padding: var.$spacing 0;
+
+
+    &__heading {
+        color: var.$secundary-color;
+        text-align: center;
+    }
+
+    &__grid {
+
+        @include mix.tablet {
+            @include mix.do-grid(2, 2rem);
+
+        }
+
+    }
+}
+
+.favorite {
+    background-color: var.$white;
+    border-radius: 1rem;
+    // box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px color.adjust(var.$grey, $lightness: -30%);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    text-align: center;
+
+    &__image {
+        width: 55%;
+        height: auto;
+        margin: 0 auto 2rem auto;
+
+    }
+
+    &__content img {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+
+    }
+
+
+    &__name {
+        color: var.$main-color;
+        margin-bottom: 0;
+
+    }
+
+    &__description {
+        line-height: 1.5;
+    }
+
+
+    @include mix.tablet {
+        text-align: start;
+
+        &__grid {
+
+            @include mix.do-grid(2, 2rem);
+            align-items: center;
+
+        }
+
+        &__image {
+            width: 75%;
+
+        }
+
+
+        &__content img {
+            margin: 0;
+
+        }
+
+        &__content {
+            margin: 2rem 0;
+
+        }
+
+    }
+
+    @include mix.desktop {
+
+        &__grid {
+            @include mix.do-grid(3, 2rem);
+
+        }
+
+        &__image {
+            grid-column: 1/2;
+            width: 90%;
+
+        }
+        
+
+        &__content {
+            grid-column: 2/4;
+        }
+
+    }
+
+
+
+
+}
