@@ -1,0 +1,59 @@
+@use 'vars' as var;
+@use 'mixins' as mix;
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    
+    // Llamada mixins
+    @include mix.box-sizing(border-box);
+}
+
+*, *::after, *::before {
+    @include mix.box-sizing(inherit);
+}
+
+body {
+    font-family: var.$main-font;
+    font-size: 2rem;
+}
+
+// Textos
+p {
+    color: var.$black;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h1, h2, h3 {
+    margin: 0 0 var.$spacing 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Imágenes responsive
+img {
+    max-width: 100%;
+    display: block;
+}
+
+// Contenedor
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95%;
+}

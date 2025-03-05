@@ -1,0 +1,88 @@
+@use '../base/vars' as var;
+@use '../base/mixins' as mix;
+
+.footer {
+    background-color: var.$secundary-color;
+    color: var.$white;
+    text-align: center;
+    padding-top: var.$spacing;
+
+    &__text {
+        color: var.$white;
+        line-height: 1.5;
+    }
+
+    &__widget {
+        margin-top: var.$spacing;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        color: var.$white;
+        line-height: 1.5;
+    }
+
+    &__copyright {
+        background-color: var.$main-color;
+        color: var.$white;
+        padding: 1rem;
+    }
+
+    @include mix.tablet {
+
+        text-align: left;
+        
+        &__grid {
+            @include mix.do-grid(3, 2rem);
+            
+        }
+
+        &__widget {
+            margin-top: 0;
+        }
+
+        &__copyright {
+            text-align: center;
+        }
+    }
+}
+
+
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+
+    // Para que la barra ocupe el 100% del ancho y así tb el botón
+    width: 100%;
+
+    @include mix.desktop {
+        flex-direction: row;
+        width: auto;
+    }
+
+    &__link {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var.$black;
+
+
+        &--register {
+            @include mix.btn (var.$main-color, var.$white);
+        }
+    }
+
+
+
+}

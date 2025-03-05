@@ -1,0 +1,7 @@
+// Este archivo debe estar en cada carpeta para redireccionar al resto de archivos
+
+// Esto es algo parecido a use, pero es una referencia
+// Con forwars no podriamos usar aquí las variables del otro archivo
+@forward 'vars';
+@forward 'mixins';
+@forward 'globals';
