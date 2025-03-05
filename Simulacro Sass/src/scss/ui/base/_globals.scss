@@ -16,7 +16,9 @@ html {
 
 body {
     font-family: var.$main-font;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 // Textos
@@ -26,7 +28,12 @@ p {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.4rem;
+
+    color: transparent;
+    background: linear-gradient(to right, var.$main-color 0%, var.$secondary-color 100%);
+    -webkit-background-clip: text; /* Necesario para Chrome, Edge y Safari*/
+    background-clip: text; 
 }
 
 h2 {
@@ -34,11 +41,13 @@ h2 {
 }
 
 h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
 }
 
 h1, h2, h3 {
-    margin: 0 0 var.$spacing 0;
+    line-height: 1.2;
+    font-weight: 900;
+    font-family: var.$secondary-bold-font;
 }
 
 a {

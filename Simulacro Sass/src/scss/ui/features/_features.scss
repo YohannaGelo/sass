@@ -1,0 +1,34 @@
+@use '../base/vars' as var;
+@use '../base/mixins' as mix;
+
+.features {
+
+    margin: var.$spacing 0;
+    text-align: center;
+
+    &__feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__image {
+        width: 15%;
+        
+    }
+
+    &__title {
+        color: var.$main-color;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    @include mix.tablet {
+        &__grid {
+            @include mix.do-grid(3, 2rem);
+            padding: 0 2rem;
+        }
+        
+    }
+
+}

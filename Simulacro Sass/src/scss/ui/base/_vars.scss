@@ -1,0 +1,36 @@
+// Variables reutilizables
+
+// Fuentes importadas
+@font-face {
+    /* para inserta una fuente descargada en nuestro proyecto */
+    font-family: 'Lato';
+    // ¡OJO! Debemos tomar la ruta desde el css que se generará
+    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    /* para inserta una fuente descargada en nuestro proyecto */
+    font-family: 'Lato-bold';
+    // ¡OJO! Debemos tomar la ruta desde el css que se generará
+    src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+// Fuentes
+$main-font: 'Roboto', sans serif;
+$secondary-font: 'Lato', sans serif;
+$secondary-bold-font: 'Lato-bold', sans serif;
+
+// Colores
+$main-color: #1073BA;
+$secondary-color: #00DA55;
+$black: #1F1E1E;
+$dark_grey: #3B3B3B;
+$grey: #e1e1e1;
+$white: #ffffff;
+
+// Separación entre secciones
+$spacing: 5rem;
+
+// Tamaños media-queries  
+$medium: 768px;
+$big: 992px;

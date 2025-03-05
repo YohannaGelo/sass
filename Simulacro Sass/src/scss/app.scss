@@ -2,4 +2,7 @@
 // En cada carpeta debe haber un _index.html, que es el que buscará este
 @use 'ui/base';
 @use 'ui/header';
-// @use 'footer';
+@use 'ui/features';
+@use 'ui/choose';
+@use 'ui/newsletter';
+@use 'ui/footer';

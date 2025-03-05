@@ -1,0 +1,15 @@
+@use '../base/vars' as var;
+@use '../base/mixins' as mix;
+
+.footer * {
+
+    color: var.$main-color;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    text-align: center;
+
+    @include mix.tablet {
+        text-align: left;
+
+    }
+}
