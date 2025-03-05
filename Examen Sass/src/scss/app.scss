@@ -1,0 +1,5 @@
+// Este archivo solo contiene importaciones de todas las carpetas scss
+// En cada carpeta debe haber un _index.html, que es el que buscará este
+@use 'ui/base';
+@use 'ui/header';
+// @use 'footer';
