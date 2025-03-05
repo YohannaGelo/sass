@@ -1,0 +1,31 @@
+@use 'sass:color';
+
+// Variables propias
+$rojo: #f34f51;
+$turquesa: #0098ae;
+$oscuro: #212121;
+$gris: #b5b5b5;
+
+
+// Reescribimos variables de bootstrap
+$primary: $rojo;
+$secondary: $turquesa;
+$dark: $oscuro;
+
+// Tipografías
+$display-font-weight: 900;
+$heading-font-weight: 700;
+
+// Cards
+$card-border-color: transparent;
+
+// Nav links
+$nav-link-color: $gris;
+$nav-link-hover-color: color.scale($gris, $lightness: -40%);
+
+
+// Importamos Bootstrap de node_modules
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
